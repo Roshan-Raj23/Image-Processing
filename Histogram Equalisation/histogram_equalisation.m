@@ -48,6 +48,7 @@ for r = 1:rows
         equalizedImg(r, c) = map(grayImg(r, c) + 1);
     end
 end
+
 equalizedImg = uint8(equalizedImg); % Convert to uint8 for display
 
 % Compute the histogram for the equalized image
