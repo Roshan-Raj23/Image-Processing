@@ -1,4 +1,8 @@
-% Telling user to select an image file
+clc;
+clear all;
+close all;
+
+% Prompt user to select an image file
 [file, path] = uigetfile('Images/Lena.jpg', 'Select Lena.jpg');
 if isequal(file, 0)
     disp('No file selected. Exiting...');
